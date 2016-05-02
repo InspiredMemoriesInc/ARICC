@@ -21,15 +21,25 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
 
     <!--Google Chrome v39 Lollpop Afterwards Mobile Support-->
-    <meta name="theme-color" content="skyblue">
+    <meta name="theme-color" content="#00bcd4">
     <link rel="icon" sizes="192x192" href="images/favicon192.png">
 </head>
 <body>
     <header>
-        <nav>
+        <nav style="background-color: #0097a7">
             <div class="nav-wrapper">
-                <div class="valign-wrapper">
-                    <h1><a href="#" class="brand-logo center">ARICC</a></h1>
+            </div>
+        </nav>
+        <nav style="background-color: #00bcd4; height: 200px">
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="col">
+                            <a href="#!" class="breadcrumb">First</a>
+                            <a href="#!" class="breadcrumb">Second</a>
+                            <a href="#!" class="breadcrumb">Third</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -47,52 +57,60 @@
                         <form class="col s12">
                             <div class="container">
                                 <div class="row">
-                                    <div class="input-field col s6">
-                                        <i class="material-icons prefix">account_circle</i>
-                                        <input id="first_name" type="text" class="validate">
-                                        <label for="first_name">First Name</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                        <input id="last_name" type="text" class="validate">
-                                        <label for="last_name">Last Name</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="container">
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <i class="material-icons prefix">perm_identity</i>
-                                        <input id="age" type="text" class="validate">
-                                        <label for="age">Age</label>
-                                    </div>
-                                    <div class="input-field col s4">
-                                        <input type="checkbox" id="test5" />
-                                        <label for="test5">Male</label>
-                                    </div>
-                                    <div class="input-field col s4">
-                                        <input type="checkbox" id="test6" />
-                                        <label for="test6">Female</label>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <input id="first_name" type="text" class="validate">
+                                                <label for="first_name">First Name</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <input id="last_name" type="text" class="validate">
+                                                <label for="last_name">Last Name</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="container">
                                 <div class="row">
-                                    <div class="input-field col s6">
-                                        <i class="material-icons prefix">today</i>
-                                        <label for="bdate">Birthday</label>
-                                        <input id="bdate" type="text" class="datepicker" placeholder="MM/DD/YYYY">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <input id="age" type="text" class="validate">
+                                                <label for="age">Age</label>
+                                            </div>
+                                            <div class="col s6">
+                                                <label>Gender</label>
+                                                <select>                                                    
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>                                                
+                                            </div>                          
+                                        </div>
                                     </div>
-                                    <div class="input-field col s6">
-                                        <input id="last_name" type="text" class="validate">
-                                        <label for="last_name">Last Name</label>
                                     </div>
                                 </div>
-                            </div>
 
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="input-field col s6">
+                                                        <label for="bdate">Birthday</label>
+                                                        <input id="bdate" type="text" class="datepicker" placeholder="MM/DD/YYYY">
+                                                    </div>
+                                                    <div class="input-field col s6">
+                                                        <input id="icon_telephone" type="tel" class="validate">
+                                                        <label for="icon_telephone">Telephone</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        </form>
+</form>
                     </div>
                 </div>
             </div>

@@ -2189,6 +2189,7 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -2722,7 +2723,7 @@ ul.staggered-list li {
 footer.page-footer {
     margin-top: 20px;
     padding-top: 20px;
-    background-color: #1e88e5;
+    background-color: #00bcd4;
 }
 
     footer.page-footer .footer-copyright {
@@ -3965,9 +3966,9 @@ nav ul a span.badge {
 
 nav {
     color: #fff;
-    background-color: #1e88e5;
+    background-color: teal;
     width: 100%;
-    height: 156px;
+    height: 56px;
     line-height: 56px;
 }
 
@@ -4154,7 +4155,7 @@ nav .input-field {
 
 @media only screen and (min-width: 601px) {
     nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-        height: 156px;
+        height: 56px;
         line-height: 64px;
     }
 
@@ -5778,6 +5779,7 @@ form p {
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
+    user-select: none;
 }
 
     [type="checkbox"] + label:before, [type="checkbox"]:not(.filled-in) + label:after {
@@ -5989,6 +5991,7 @@ form p {
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
+    user-select: none;
 }
 
     .switch label {
@@ -6062,20 +6065,18 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after, input[type=checkbox]:
 
 select {
     display: none;
-}
-
-    select.browser-default {
-        display: block;
-    }
-
-select {
-    background-color: rgba(255,255,255,0.9);
+     background-color: rgba(255,255,255,0.9);
     width: 100%;
     padding: 5px;
     border: 1px solid #f2f2f2;
     border-radius: 2px;
     height: 3rem;
 }
+
+    select.browser-default {
+        display: block;
+    }
+
 
 .select-label {
     position: absolute;
@@ -6129,6 +6130,7 @@ select:disabled {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    user-select: none;
     border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 
@@ -6589,6 +6591,7 @@ input[type=range] {
 @-webkit-keyframes container-rotate {
     to {
         -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -6665,34 +6668,42 @@ input[type=range] {
 @-webkit-keyframes fill-unfill-rotate {
     12.5% {
         -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
     }
 
     25% {
         -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
     }
 
     37.5% {
         -webkit-transform: rotate(405deg);
+        transform: rotate(405deg);
     }
 
     50% {
         -webkit-transform: rotate(540deg);
+        transform: rotate(540deg);
     }
 
     62.5% {
         -webkit-transform: rotate(675deg);
+        transform: rotate(675deg);
     }
 
     75% {
         -webkit-transform: rotate(810deg);
+        transform: rotate(810deg);
     }
 
     87.5% {
         -webkit-transform: rotate(945deg);
+        transform: rotate(945deg);
     }
 
     to {
         -webkit-transform: rotate(1080deg);
+        transform: rotate(1080deg);
     }
 }
 
@@ -7025,14 +7036,17 @@ input[type=range] {
 @-webkit-keyframes left-spin {
     from {
         -webkit-transform: rotate(130deg);
+        transform: rotate(130deg);
     }
 
     50% {
         -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
     }
 
     to {
         -webkit-transform: rotate(130deg);
+        transform: rotate(130deg);
     }
 }
 
@@ -7065,14 +7079,17 @@ input[type=range] {
 @-webkit-keyframes right-spin {
     from {
         -webkit-transform: rotate(-130deg);
+        transform: rotate(-130deg);
     }
 
     50% {
         -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
     }
 
     to {
         -webkit-transform: rotate(-130deg);
+        transform: rotate(-130deg);
     }
 }
 
@@ -7311,6 +7328,7 @@ input[type=range] {
     -webkit-transition: background 0.15s ease-out, top 0s 0.15s;
     transition: background 0.15s ease-out, top 0s 0.15s;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .picker__frame {
@@ -7377,6 +7395,7 @@ input[type=range] {
     top: 0;
     background: transparent;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1E000000,endColorstr=#1E000000)";
+    filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1E000000,endColorstr=#1E000000)";
     -ms-zoom: 1;
     zoom: 1;
     background: rgba(0,0,0,0.32);
