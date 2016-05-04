@@ -6,3 +6,4 @@
 *.sln
 *.config
 /gallery/images
+/website.publishproj

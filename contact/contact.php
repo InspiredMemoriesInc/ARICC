@@ -1,9 +1,9 @@
 <?php 
 	
-	$name = $_REQUEST[ 'contact-name' ];
-	$email = $_REQUEST[ 'contact-email' ];
-	$subject = $_REQUEST[ 'contact-subject' ];
-	$message = $_REQUEST[ 'contact-message' ];
+	$name = $_POST[ 'contact-name' ];
+	$email = $_POST[ 'contact-email' ];
+	$subject = $_POST[ 'contact-subject' ];
+	$message = $_POST[ 'contact-message' ];
 	$mail_subject = $subject . "( Customer Contact )";
 	$message = "Name: ".$name." || Email: ".$email." || Subject: ".$subject." || Message: ".$message;
 	
